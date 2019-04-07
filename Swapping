@@ -1,0 +1,58 @@
+#include<iostream>
+using namespace std;
+
+class dhaje
+{
+	public:
+		long x,y,z;
+		void twovarswap();
+		void threevarswap();
+};
+
+int main()
+{
+	dhaje dhaje1;
+	dhaje1.twovarswap();
+	dhaje1.threevarswap();
+	return 0;
+}
+
+void dhaje::twovarswap()
+{
+	//Swapping Two Varibles
+	cout<<"Swapping Two Variables"<<endl;
+	cout<<"Input X: ";
+	cin>>x;
+	cout<<"Input Y: ";
+	cin>>y;
+	
+	y=x+y;
+	x=y-x;
+	y=y-x;
+	
+	cout<<endl<<"Swapped Two Variables: "<<endl<<"X = "<<x<<endl;
+	cout<<"Y = "<<y<<endl;
+}
+
+void dhaje::threevarswap()
+{
+	//Swapping Three Varibles
+	cout<<endl<<"Swapping Three Variables"<<endl;
+	cout<<"Input X: ";
+	cin>>x;
+	cout<<"Input Y: ";
+	cin>>y;
+	cout<<"Input Z: ";
+	cin>>z;
+	
+	x=x+y;
+	y=x-y;
+	x=x-y; 
+	z=z+x;
+	x=z-x;
+	z=z-x;
+	
+	cout<<endl<<"Swapped Three Variables: "<<endl<<"X = "<<x<<endl;
+	cout<<"Y = "<<y<<endl;
+	cout<<"Z = "<<z<<endl;
+}
